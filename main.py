@@ -8,9 +8,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("backup", type=Path, help="Enter path to the backup FOLDER.")
 parser.add_argument("source", type=Path, help="Enter path to the source FOLDER.")
 parser.add_argument("log_path", type=Path, help="Enter path to the log FILE.")
-parser.add_argument("-i", "--interval", type=int, help="Specify, how often to synchronize the folders(in minutes).")
+parser.add_argument("-i", "--interval", type=int, help="Specify, how often to synchronize the folders (in minutes).")
 args = parser.parse_args()
-
 
 if __name__ == '__main__':
     file_io = FileIO(args.backup, args.source)

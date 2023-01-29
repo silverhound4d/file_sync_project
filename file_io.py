@@ -60,6 +60,7 @@ class FileIO:
                     log.logger.debug(f"Directory removed: {backup_abs_path}")
 
     def sync_folders(self) -> None:
+        """Synchronize select folders."""
         log.logger.info("==== Initializing folder synchronization ====")
         self.create_file_system_objects(self.backup_folder, self.source_folder)
         self.delete_file_system_objects(self.backup_folder, self.source_folder)

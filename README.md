@@ -2,7 +2,7 @@ IMPORTANT: Runs on LINUX only (and possibly Mac)
 
 1. Clone project to your `home` folder.
 2. `cd` into the project folder to make it your current working directory.
-3. Create a virtual environment .
+3. Create a virtual environment.
 4. Activate your virtual environment and install dependencies `pip install -r requirements.txt`.
 5. Launch the script from the command line and enter required arguments:
    * Path to the backup folder.

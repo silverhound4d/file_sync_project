@@ -3,6 +3,7 @@ import logger as log
 
 
 def schedule_file_sync_cron_job(parsed_args) -> None:
+    """Setup a cron daemon to repeatedly sync select folders."""
     if parsed_args.interval is not None:
         log.logger.debug("Initializing file_sync cron job")
         job = (

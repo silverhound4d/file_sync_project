@@ -1,6 +1,7 @@
 import hashlib
 import logger as log
 
+
 class Utils:
     @staticmethod
     def hash_file(opened_file) -> str:
