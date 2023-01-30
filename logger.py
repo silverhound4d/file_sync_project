@@ -6,7 +6,7 @@ from main import args
 formatter = logging.Formatter(' %(name)s :: %(asctime)s :: %(levelname)-8s :: %(message)s')
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
 file_handler = logging.FileHandler(filename=args.log_path)
 file_handler.setFormatter(formatter)
